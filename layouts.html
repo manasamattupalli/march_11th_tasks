@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #parent{
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                grid-template-rows: 200px 200px 200px;
+                row-gap: px;
+                column-gap: px;
+                background-color: rgb(7, 236, 45);
+                justify-content: center;
+        
+            }
+           
+            div:hover{
+                display: grid;
+                background-color: rgb(7, 236, 45);
+                row-gap: 30px;
+                column-gap: 30px;
+                
+               
+            }
+
+            #parent div{
+                background-color: aquamarine;
+            }
+            #a{
+                background-image: url("https://tse1.mm.bing.net/th?id=OIP.fUM_9etl0rPCEbZC5tAPlwHaE5&pid=Api&P=0&h=180");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #b{
+                background-image: url("https://tse3.mm.bing.net/th?id=OIP.hHS7HSAJt2B2ZZ-UDS7WNwHaFQ&pid=Api&P=0&h=180");
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+            #c{
+                background-image: url("https://tse3.mm.bing.net/th?id=OIP.pTfXdb-3U9brtBHekhbshAHaJa&pid=Api&P=0&h=180");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #d{
+                background-image: url("https://tse2.mm.bing.net/th?id=OIP.Ixd1_cwktRptcWRUMSo0aAHaEo&pid=Api&P=0&h=180");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <button><a href="./index.html">back</a></button>
+        <div id="parent">
+            <div style="grid-column: 1/3;" id="a"></div>
+            <div id="b">
+                2
+            </div>
+            <div style="grid-row: 2/4;" id="c"> 3</div>
+            <div id="b">4</div>
+            <div id="a">5</div>
+            <div style="grid-column: 2/4;" id="d">6</div>
+            
+        </div>
+
+    </body>
+</html>

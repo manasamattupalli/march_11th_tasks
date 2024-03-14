@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <style>
+
+            .a{
+                display: inline-block;
+                margin-right: 200px;
+            }
+
+            #parent{
+                display: grid;
+                grid-template-columns: 100px 100px 100px ;
+                grid-template-rows: 50px 50px 50px 50px;
+                row-gap: 10px;
+                column-gap: 10px;
+                background-color: aqua;
+                justify-content: start;
+                
+                
+            }
+            #parent2{
+                display: grid;
+                grid-template-columns: 50px 200px 50px ;
+                grid-template-rows: 50px 50px 50px 50px;
+                row-gap: 10px;
+                column-gap: 10px;
+                background-color: aqua;
+                justify-content: start;
+                
+            }
+            #parent3{
+                display: grid;
+                grid-template-columns: 50px 200px 50px ;
+                grid-template-rows: 50px 150px 50px;
+                row-gap: 10px;
+                column-gap: 10px;
+                background-color: rgb(28, 235, 235);
+                justify-content: start;
+            }
+            #parent4{
+                display: grid;
+                grid-template-columns: 50px 280px  ;
+                grid-template-rows: 50px 50px 50px;
+                row-gap: 10px;
+                column-gap: 10px;
+                background-color: rgb(28, 235, 235);
+                justify-content: start;
+            }
+            #parent div{
+                background-color: brown;
+                position:sticky;
+            }
+            #parent2 div{
+                background-color: rgb(28, 144, 105);
+            }
+            #parent3 div{
+                background-color: rgb(157, 82, 227);
+            }
+            #parent4 div{
+                background-color: chocolate;
+            }
+    
+           
+        </style>
+    </head>
+    <body>
+
+        <button><a href="./home.html">Back</a></button>
+        <center>
+            <u><h2>Grid</h2></u>
+        </center>
+
+        <div class="a">
+            <h1>first</h1>
+        <div id="parent">
+            <div style="grid-column: 1/6;">1</div>
+            <div style="  grid-row: 2/4;">2</div>
+            <div style="grid-row: 2/4;">3</div>
+            <div style="grid-row: 2/4;">4</div>
+            <div style="grid-column: 1/6; ">5</div>
+            
+
+
+        </div>
+        <h1>second</h1>
+        <div id="parent2">
+           
+            <div style="grid-column: 1/4;">1</div>
+            <div style="grid-row: 2/4;">2</div>
+            <div style="grid-row: 2/4;">3</div>
+            <div style="grid-row: 2/4;">4</div>
+            <div style="grid-column: 1/4;">5</div> 
+        </div>
+        </div>
+        <div class="a">
+            <h1>third</h1>
+        <div id="parent3">
+            
+            <div style="grid-column: 1/4;">1</div>
+            <div style="grid-column: 1/4;">2</div>
+            <div style="grid-column: 1/4;">3</div>
+            
+
+        </div>
+
+        <h1>fourth</h1>
+        <div id="parent4">
+            <div style="grid-row: 1/4 ;">1</div>
+            <div style="grid-row: 1/4;">2</div>
+        </div>
+            
+
+        </div>
+
+
+       
+        
+
+    </body>
+</html>
